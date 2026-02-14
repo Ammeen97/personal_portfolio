@@ -18,8 +18,12 @@ export default async function Home() {
                 </div>
                 {/* Hero Section */}
                 <section className={styles.hero}>
-                    <div className={styles.marqueeWrapper}>
-                        <Marquee text="AMINE BEN FAIZA - VISUAL IDENTITY DESIGNER -" speed="70s" />
+                    <div className={styles.marqueeWrapperTop}>
+                        <Marquee
+                            text="AMINE BEN FAIZA "
+                            speed="30s"
+                            direction="left-to-right"
+                        />
                     </div>
                     <div className="container">
                         <div className={styles.heroContent}>
@@ -46,6 +50,13 @@ export default async function Home() {
                             <div className={styles.gradientBlob1}></div>
                             <div className={styles.gradientBlob2}></div>
                         </div>
+                    </div>
+                    <div className={styles.marqueeWrapperBottom}>
+                        <Marquee 
+                            text="VISUAL IDENTITY DESIGNER " 
+                            speed="40s" 
+                            direction="right-to-left"
+                        />
                     </div>
                 </section>
 

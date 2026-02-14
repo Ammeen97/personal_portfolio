@@ -14,12 +14,22 @@
     z-index: 2;
 }
 
-.marqueeWrapper {
+.marqueeWrapperTop {
     position: absolute;
     top: 20%;
     left: 0;
     width: 100vw; /* Force it to full screen width */
     transform: translateY(-50%); /* Centers it vertically behind the text */
+    z-index: 1; /* Sits behind heroContent (which is z-index 10) */
+    pointer-events: none;
+}
+
+.marqueeWrapperBottom {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100vw; /* Force it to full screen width */
+    transform: translateY(50%); /* Centers it vertically behind the text */
     z-index: 1; /* Sits behind heroContent (which is z-index 10) */
     pointer-events: none;
 }
