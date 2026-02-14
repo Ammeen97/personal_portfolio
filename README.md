@@ -5,8 +5,7 @@ A modern, premium portfolio website built with Next.js, featuring automatic proj
 ## ✨ Features
 
 - 🎨 **Stunning Premium Design** - Dark mode with gradient accents, glassmorphism effects, and smooth animations
-- 🔌 **Behance API Integration** - Automatically fetches and displays your projects from Behance
-- ⚡ **Next.js 14** - Built with the latest Next.js for optimal performance
+- ⚡ **Next.js 16** - Built with the latest Next.js for optimal performance
 - 📱 **Fully Responsive** - Beautiful on all devices, from mobile to desktop
 - 🎯 **SEO Optimized** - Complete meta tags, Open Graph, and sitemap support
 - 🚀 **Production Ready** - Optimized for deployment to Vercel, Netlify, or any hosting provider
@@ -33,7 +32,7 @@ amine-portfolio/
 ├── package.json
 ├── next.config.js
 ├── tsconfig.json
-└── .env.local.example
+└── .env
 ```
 
 ## 🚀 Getting Started
@@ -41,26 +40,20 @@ amine-portfolio/
 ### Prerequisites
 
 - Node.js 18+ and npm installed
-- (Optional) Behance API key for higher rate limits
 
 ### Installation
 
-1. **Clone or navigate to the project**
-   ```bash
-   cd C:\Users\mbenfaiza2\.gemini\antigravity\scratch\amine-portfolio
-   ```
-
-2. **Install dependencies**
+1. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Run the development server**
+2. **Run the development server**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+3. **Open your browser**
    
    Navigate to [http://localhost:3000](http://localhost:3000)
 
@@ -189,7 +182,7 @@ The portfolio uses a comprehensive design system with:
 ## 🆘 Troubleshooting
 
 ### Projects not loading?
-- Check your Behance username in `.env.local`
+- Check your Behance username in `.env`
 - Verify your Behance profile is public
 - The site will show fallback projects if API fails
 
