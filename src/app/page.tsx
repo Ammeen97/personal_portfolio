@@ -2,15 +2,19 @@ import Link from 'next/link';
 import { getBehanceProjects } from '@/lib/behance';
 import ProjectCard from '@/components/ProjectCard';
 import styles from './page.module.css';
+import Marquee from '@/components/Marquee/Marquee';
 
 export default async function Home() {
-    const projects = await getBehanceProjects(process.env.NEXT_PUBLIC_BEHANCE_USERNAME || 'aminebenfa');
+    const projects = await getBehanceProjects(process.env.BEHANCE_USERNAME || 'aminebenfa');
     const featuredProjects = projects.slice(0, 4); // Show first 4 projects
 
     return (
         <>
             {/* Hero Section */}
             <section className={styles.hero}>
+                <div className={styles.marqueeWrapper}>
+                    <Marquee text="AMINE BEN FAIZA " speed="50s" />
+                </div>
                 <div className="container">
                     <div className={styles.heroContent}>
                         <h1 className={`${styles.heroTitle} fade-in`}>

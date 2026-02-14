@@ -1,11 +1,21 @@
 .hero {
     position: relative;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
     padding: var(--spacing-3xl) 0;
+}
+
+.marqueeWrapper {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 100vw; /* Force it to full screen width */
+    transform: translateY(-50%); /* Centers it vertically behind the text */
+    z-index: 1; /* Sits behind heroContent (which is z-index 10) */
+    pointer-events: none;
 }
 
 .heroContent {
