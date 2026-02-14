@@ -9,9 +9,9 @@
   --color-text-secondary: #A0A0A0;
   --color-text-tertiary: #6B6B6B;
   
-  --color-accent-primary: #6366F1;
-  --color-accent-secondary: #8B5CF6;
-  --color-accent-hover: #7C3AED;
+  --color-accent-primary: #464600;
+  --color-accent-secondary: #d41636;
+  --color-accent-hover: #f0a202;
   
   --color-border: #2A2A2A;
   --color-border-hover: #3A3A3A;
@@ -117,7 +117,7 @@ a {
 }
 
 a:hover {
-  color: var(--color-accent-primary);
+  color: var(--color-accent-hover);
 }
 
 /* Layout */
