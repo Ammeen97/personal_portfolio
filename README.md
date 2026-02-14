@@ -5,8 +5,7 @@ A modern, premium portfolio website built with Next.js, featuring automatic proj
 ## ✨ Features
 
 - 🎨 **Stunning Premium Design** - Dark mode with gradient accents, glassmorphism effects, and smooth animations
-- 🔌 **Behance API Integration** - Automatically fetches and displays your projects from Behance
-- ⚡ **Next.js 14** - Built with the latest Next.js for optimal performance
+- ⚡ **Next.js 16** - Built with the latest Next.js for optimal performance
 - 📱 **Fully Responsive** - Beautiful on all devices, from mobile to desktop
 - 🎯 **SEO Optimized** - Complete meta tags, Open Graph, and sitemap support
 - 🚀 **Production Ready** - Optimized for deployment to Vercel, Netlify, or any hosting provider
@@ -33,7 +32,7 @@ amine-portfolio/
 ├── package.json
 ├── next.config.js
 ├── tsconfig.json
-└── .env.local.example
+└── .env
 ```
 
 ## 🚀 Getting Started
@@ -41,41 +40,20 @@ amine-portfolio/
 ### Prerequisites
 
 - Node.js 18+ and npm installed
-- (Optional) Behance API key for higher rate limits
 
 ### Installation
 
-1. **Clone or navigate to the project**
-   ```bash
-   cd C:\Users\mbenfaiza2\.gemini\antigravity\scratch\amine-portfolio
-   ```
-
-2. **Install dependencies**
+1. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Set up environment variables (Optional)**
-   
-   Copy the example file:
-   ```bash
-   copy .env.local.example .env.local
-   ```
-   
-   Edit `.env.local` and add your details:
-   ```env
-   NEXT_PUBLIC_BEHANCE_USERNAME=your_behance_username
-   NEXT_PUBLIC_BEHANCE_API_KEY=your_api_key_here  # Optional
-   ```
-
-   > **Note:** The website works without an API key using fallback data. An API key is only needed for higher rate limits when fetching from Behance.
-
-4. **Run the development server**
+2. **Run the development server**
    ```bash
    npm run dev
    ```
 
-5. **Open your browser**
+3. **Open your browser**
    
    Navigate to [http://localhost:3000](http://localhost:3000)
 
@@ -90,7 +68,7 @@ amine-portfolio/
 
 2. **Behance Username**: Update in `.env.local`:
    ```env
-   NEXT_PUBLIC_BEHANCE_USERNAME=your_username
+   BEHANCE_USERNAME=your_username
    ```
 
 3. **Colors & Design**: Customize the design system in `src/app/globals.css`:
@@ -118,9 +96,8 @@ If you want to customize the fallback projects (used when Behance API is unavail
    - Go to [vercel.com](https://vercel.com)
    - Click "Import Project"
    - Select your GitHub repository
-   - Add environment variables (if using Behance API):
-     - `NEXT_PUBLIC_BEHANCE_USERNAME`
-     - `NEXT_PUBLIC_BEHANCE_API_KEY` (optional)
+   - Add environment variables
+     - `BEHANCE_USERNAME`
    - Click "Deploy"
 
 3. **Done!** Your site will be live at `https://your-project.vercel.app`
@@ -146,18 +123,6 @@ Both Vercel and Netlify allow you to add a custom domain for free. Simply:
 2. Go to your deployment settings
 3. Add the custom domain
 4. Update your domain's DNS settings as instructed
-
-## 📊 Behance API Setup (Optional)
-
-The website works without a Behance API key, but you can get one for higher rate limits:
-
-1. Go to [behance.net/dev](https://www.behance.net/dev)
-2. Register a new app
-3. Copy your API key
-4. Add it to `.env.local`:
-   ```env
-   NEXT_PUBLIC_BEHANCE_API_KEY=your_key_here
-   ```
 
 ## 🛠️ Development Scripts
 
@@ -217,7 +182,7 @@ The portfolio uses a comprehensive design system with:
 ## 🆘 Troubleshooting
 
 ### Projects not loading?
-- Check your Behance username in `.env.local`
+- Check your Behance username in `.env`
 - Verify your Behance profile is public
 - The site will show fallback projects if API fails
 
