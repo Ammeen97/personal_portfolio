@@ -55,22 +55,7 @@ amine-portfolio/
    npm install
    ```
 
-3. **Set up environment variables (Optional)**
-   
-   Copy the example file:
-   ```bash
-   copy .env.local.example .env.local
-   ```
-   
-   Edit `.env.local` and add your details:
-   ```env
-   BEHANCE_USERNAME=your_behance_username
-   BEHANCE_API_KEY=your_api_key_here  # Optional
-   ```
-
-   > **Note:** The website works without an API key using fallback data. An API key is only needed for higher rate limits when fetching from Behance.
-
-4. **Run the development server**
+3. **Run the development server**
    ```bash
    npm run dev
    ```
@@ -118,9 +103,8 @@ If you want to customize the fallback projects (used when Behance API is unavail
    - Go to [vercel.com](https://vercel.com)
    - Click "Import Project"
    - Select your GitHub repository
-   - Add environment variables (if using Behance API):
+   - Add environment variables
      - `BEHANCE_USERNAME`
-     - `BEHANCE_API_KEY` (optional)
    - Click "Deploy"
 
 3. **Done!** Your site will be live at `https://your-project.vercel.app`
@@ -146,18 +130,6 @@ Both Vercel and Netlify allow you to add a custom domain for free. Simply:
 2. Go to your deployment settings
 3. Add the custom domain
 4. Update your domain's DNS settings as instructed
-
-## 📊 Behance API Setup (Optional)
-
-The website works without a Behance API key, but you can get one for higher rate limits:
-
-1. Go to [behance.net/dev](https://www.behance.net/dev)
-2. Register a new app
-3. Copy your API key
-4. Add it to `.env.local`:
-   ```env
-   BEHANCE_API_KEY=your_key_here
-   ```
 
 ## 🛠️ Development Scripts
 
