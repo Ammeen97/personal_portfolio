@@ -6,7 +6,7 @@ interface MarqueeProps {
   className?: string;
 }
 
-export default function Marquee({ text, speed = '30s', className }: MarqueeProps) {
+export default function Marquee({ text, speed, className }: MarqueeProps) {
   return (
     <div className={`${styles.marqueeContainer} ${className}`}>
       <div className={styles.marqueeTrack} style={{ animationDuration: speed }}>

@@ -23,6 +23,13 @@ const neueMachina = localFont({
     variable: '--font-neue-machina'
 })
 
+const gallery = localFont({
+    src: [
+        { path: '../assets/fonts/Gallery/gallery-regular.otf', weight: '400', style: 'normal' },
+    ],
+    variable: '--font-gallery'
+})
+
 export const metadata: Metadata = {
     title: 'Amine Ben Faiza — Brand & Social Media Designer',
     description: 'Brand designer specializing in visual identity and social media design for startups, eco-friendly brands, and tech companies. Based in Tunisia, working globally.',
@@ -52,7 +59,7 @@ export default function RootLayout({
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             </head>
-            <body className={`${inter.className} ${neueMachina.variable}`}>
+            <body className={`${inter.className} ${neueMachina.variable} ${gallery.variable}`}>
                 <Navigation />
                 <main>{children}</main>
                 <Footer />

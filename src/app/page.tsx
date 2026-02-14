@@ -10,57 +10,63 @@ export default async function Home() {
 
     return (
         <>
-            {/* Hero Section */}
-            <section className={styles.hero}>
-                <div className={styles.marqueeWrapper}>
-                    <Marquee text="AMINE BEN FAIZA " speed="50s" />
+            <div className={styles.topPageWrapper}>
+                {/* Background blobs */}
+                <div className={styles.heroBackground}>
+                    <div className={styles.gradientBlob1}></div>
+                    <div className={styles.gradientBlob2}></div>
                 </div>
-                <div className="container">
-                    <div className={styles.heroContent}>
-                        <h1 className={`${styles.heroTitle} fade-in`}>
-                            Helping startups & small businesses <br />
-                            <span className="gradient-text">look ready to grow</span>
-                        </h1>
-                        <p className={`${styles.heroSubtitle} fade-in`}>
-                            I'm Amine Ben Faiza, a Visual identity and social media designer. I help you build a clear,
-                            professional visual identity—from logo and brand assets to social media and everyday business materials.
-                        </p>
-                        <div className={`${styles.heroButtons} fade-in`}>
-                            <Link href="/work" className="btn btn-primary">
-                                View My Work
-                            </Link>
-                            <Link href="/#contact" className="btn btn-secondary">
-                                Get in Touch
-                            </Link>
+                {/* Hero Section */}
+                <section className={styles.hero}>
+                    <div className={styles.marqueeWrapper}>
+                        <Marquee text="AMINE BEN FAIZA - VISUAL IDENTITY DESIGNER -" speed="70s" />
+                    </div>
+                    <div className="container">
+                        <div className={styles.heroContent}>
+                            <h1 className={`${styles.heroTitle} fade-in`}>
+                                Helping startups & small businesses <br />
+                                <span className="gradient-text">look ready to grow</span>
+                            </h1>
+                            <p className={`${styles.heroSubtitle} fade-in`}>
+                                I'm Amine Ben Faiza, a Visual identity and social media designer. I help you build a clear,
+                                professional visual identity—from logo and brand assets to social media and everyday business materials.
+                            </p>
+                            <div className={`${styles.heroButtons} fade-in`}>
+                                <Link href="/work" className="btn btn-primary">
+                                    View My Work
+                                </Link>
+                                <Link href="/#contact" className="btn btn-secondary">
+                                    Get in Touch
+                                </Link>
+                            </div>
+                        </div>
+
+                        {/* Animated Background Elements */}
+                        <div className={styles.heroBackground}>
+                            <div className={styles.gradientBlob1}></div>
+                            <div className={styles.gradientBlob2}></div>
                         </div>
                     </div>
+                </section>
 
-                    {/* Animated Background Elements */}
-                    <div className={styles.heroBackground}>
-                        <div className={styles.gradientBlob1}></div>
-                        <div className={styles.gradientBlob2}></div>
+                {/* Featured Work Section */}
+                <section className={styles.featuredSection}>
+                    <div className="container">
+                        <div className={styles.sectionHeader}>
+                            <h2>Selected Projects</h2>
+                            <Link href="/work" className={styles.viewAll}>
+                                View All Projects →
+                            </Link>
+                        </div>
+
+                        <div className={styles.projectGrid}>
+                            {featuredProjects.map((project) => (
+                                <ProjectCard key={project.id} project={project} />
+                            ))}
+                        </div>
                     </div>
-                </div>
-            </section>
-
-            {/* Featured Work Section */}
-            <section className="section">
-                <div className="container">
-                    <div className={styles.sectionHeader}>
-                        <h2>Selected Projects</h2>
-                        <Link href="/work" className={styles.viewAll}>
-                            View All Projects →
-                        </Link>
-                    </div>
-
-                    <div className={styles.projectGrid}>
-                        {featuredProjects.map((project) => (
-                            <ProjectCard key={project.id} project={project} />
-                        ))}
-                    </div>
-                </div>
-            </section>
-
+                </section>
+            </div>
             {/* About Snippet Section */}
             <section className={`section ${styles.aboutSection}`}>
                 <div className="container">

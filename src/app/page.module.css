@@ -1,11 +1,17 @@
+.topPageWrapper {
+    position: relative;
+    overflow: hidden; /* The "scissors" move from the Hero to this wrapper */
+    background-color: var(--color-bg-primary);
+}
 .hero {
     position: relative;
     min-height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    /* overflow: hidden; removed to let blob flow out */
     padding: var(--spacing-3xl) 0;
+    z-index: 2;
 }
 
 .marqueeWrapper {
@@ -53,7 +59,7 @@
     right: 0;
     bottom: 0;
     z-index: 1;
-    overflow: hidden;
+    /* overflow: hidden; */
     pointer-events: none;
 }
 
@@ -67,16 +73,17 @@
 }
 
 .gradientBlob1 {
-    width: 600px;
-    height: 600px;
+    width: 800px;
+    height: 800px;
     background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
     top: -200px;
-    right: -200px;
+    /* right: -200px; */
+    right: -10%
 }
 
 .gradientBlob2 {
-    width: 500px;
-    height: 500px;
+    width: 700px;
+    height: 700px;
     background: linear-gradient(135deg, var(--color-accent-secondary), var(--color-accent-primary));
     bottom: -150px;
     left: -150px;
@@ -120,6 +127,14 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: var(--spacing-lg);
+}
+
+
+.featuredSection {
+    position: relative;
+    padding: var(--spacing-3xl) 0;
+    z-index: 2;
+    background: transparent;
 }
 
 .aboutSection {

@@ -14,12 +14,12 @@
 
 .marqueeTrack span {
     font-family: var(--font-neue-machina);
-    font-weight: 900;
+    font-weight: 400;
     font-size: clamp(8rem, 20vw, 15rem); /*Made it much larger for that bold look */
     text-transform: uppercase;
     white-space: nowrap;
     padding-right: 4rem; /* Spacing between the repetitions */
-    color: rgb(255, 255, 255); /* Semi-transparent white for a subtle background effect */
+    color: var(--color-accent-secondary);
     letter-spacing: -0.04em;
 }
 
