@@ -64,8 +64,8 @@ amine-portfolio/
    
    Edit `.env.local` and add your details:
    ```env
-   NEXT_PUBLIC_BEHANCE_USERNAME=your_behance_username
-   NEXT_PUBLIC_BEHANCE_API_KEY=your_api_key_here  # Optional
+   BEHANCE_USERNAME=your_behance_username
+   BEHANCE_API_KEY=your_api_key_here  # Optional
    ```
 
    > **Note:** The website works without an API key using fallback data. An API key is only needed for higher rate limits when fetching from Behance.
@@ -90,7 +90,7 @@ amine-portfolio/
 
 2. **Behance Username**: Update in `.env.local`:
    ```env
-   NEXT_PUBLIC_BEHANCE_USERNAME=your_username
+   BEHANCE_USERNAME=your_username
    ```
 
 3. **Colors & Design**: Customize the design system in `src/app/globals.css`:
@@ -119,8 +119,8 @@ If you want to customize the fallback projects (used when Behance API is unavail
    - Click "Import Project"
    - Select your GitHub repository
    - Add environment variables (if using Behance API):
-     - `NEXT_PUBLIC_BEHANCE_USERNAME`
-     - `NEXT_PUBLIC_BEHANCE_API_KEY` (optional)
+     - `BEHANCE_USERNAME`
+     - `BEHANCE_API_KEY` (optional)
    - Click "Deploy"
 
 3. **Done!** Your site will be live at `https://your-project.vercel.app`
@@ -156,7 +156,7 @@ The website works without a Behance API key, but you can get one for higher rate
 3. Copy your API key
 4. Add it to `.env.local`:
    ```env
-   NEXT_PUBLIC_BEHANCE_API_KEY=your_key_here
+   BEHANCE_API_KEY=your_key_here
    ```
 
 ## 🛠️ Development Scripts
