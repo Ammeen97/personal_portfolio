@@ -13,15 +13,13 @@
 }
 
 .marqueeTrack span {
-    font-size: clamp(8rem, 20vw, 15rem); /* Made it much larger for that bold look */
+    font-family: var(--font-neue-machina);
     font-weight: 900;
+    font-size: clamp(8rem, 20vw, 15rem); /*Made it much larger for that bold look */
     text-transform: uppercase;
     white-space: nowrap;
-    padding-right: 4rem; /* Spacing between the repetitions */
-    color: rgba(255, 255, 255, 0.26); /* Semi-transparent white for a subtle background effect */
-    /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.432); Lower opacity for subtle background feel */
-    
-    font-family: var(--font-inter); 
+    padding-right: 10rem; /* Spacing between the repetitions */
+    color: rgb(255, 255, 255); /* Semi-transparent white for a subtle background effect */
     letter-spacing: -0.04em;
 }
 

@@ -18,7 +18,7 @@
   
   /* Typography */
   --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-  --font-display: 'Cal Sans', 'Inter', sans-serif;
+  --font-display: var(--font-neue-machina),   /* 'Cal Sans', 'Inter', sans-serif; */
   
   /* Spacing */
   --spacing-xs: 0.5rem;
@@ -51,6 +51,12 @@
   /* Layout */
   --max-width: 1280px;
   --max-width-narrow: 720px;
+}
+
+/* Specific utility class to swap fonts freely */
+.font-special {
+  font-family: var(--font-neue-machina);
+  font-weight: 800;
 }
 
 /* Reset & Base Styles */
