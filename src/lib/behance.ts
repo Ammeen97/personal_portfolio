@@ -157,7 +157,7 @@ function getFallbackProjects(): BehanceProject[] {
             published_on: Date.now() / 1000,
             created_on: Date.now() / 1000,
             modified_on: Date.now() / 1000,
-            url: 'https://www.behance.net/gallery/ucometn-brand-identity',
+            url: 'https://www.behance.net/gallery/242916079/UCOtn-Brand-Identity-Visual-Guidelines',
             covers: {
                 '404': '/images/projects/uco-thumb.svg',
                 original: '/images/projects/uco-thumb.svg',
@@ -177,7 +177,7 @@ function getFallbackProjects(): BehanceProject[] {
             published_on: Date.now() / 1000,
             created_on: Date.now() / 1000,
             modified_on: Date.now() / 1000,
-            url: 'https://www.behance.net/gallery/dar-elbidha-social-media',
+            url: 'https://www.behance.net/gallery/242921073/Dar-Elbdidha-Social-Media-Design',
             covers: {
                 '404': '/images/projects/dar-elbidha-thumb.svg',
                 original: '/images/projects/dar-elbidha-thumb.svg',
