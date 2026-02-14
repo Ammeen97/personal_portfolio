@@ -1,0 +1,273 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: var(--spacing-3xl) 0;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.heroTitle {
+    margin-bottom: var(--spacing-md);
+    animation: fadeIn 0.8s ease-out;
+}
+
+.heroSubtitle {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+    animation: fadeIn 0.8s ease-out 0.2s backwards;
+}
+
+.heroButtons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: fadeIn 0.8s ease-out 0.4s backwards;
+}
+
+.heroBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.gradientBlob1,
+.gradientBlob2 {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.15;
+    animation: float 20s ease-in-out infinite;
+}
+
+.gradientBlob1 {
+    width: 600px;
+    height: 600px;
+    background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+    top: -200px;
+    right: -200px;
+}
+
+.gradientBlob2 {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, var(--color-accent-secondary), var(--color-accent-primary));
+    bottom: -150px;
+    left: -150px;
+    animation-delay: -10s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    33% {
+        transform: translate(30px, -30px) scale(1.1);
+    }
+
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+}
+
+.sectionHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.viewAll {
+    color: var(--color-accent-primary);
+    font-weight: 600;
+    transition: transform var(--transition-base);
+}
+
+.viewAll:hover {
+    transform: translateX(4px);
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.aboutSection {
+    background: var(--color-bg-secondary);
+    padding: var(--spacing-3xl) 0;
+}
+
+.aboutGrid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+}
+
+.aboutContent p {
+    margin-bottom: var(--spacing-md);
+}
+
+.aboutContent strong {
+    color: var(--color-text-primary);
+    font-weight: 600;
+}
+
+.aboutStats {
+    display: grid;
+    gap: var(--spacing-md);
+}
+
+.statCard {
+    text-align: center;
+    padding: var(--spacing-lg) !important;
+}
+
+.statCard h3 {
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+.statCard p {
+    color: var(--color-text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.serviceCard {
+    text-align: center;
+}
+
+.serviceIcon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.serviceCard h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.serviceCard p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.ctaSection {
+    padding: 0;
+    margin: var(--spacing-3xl) 0;
+}
+
+.ctaCard {
+    background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl) var(--spacing-2xl);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.ctaCard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.5;
+}
+
+.ctaCard h2,
+.ctaCard p {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.ctaCard h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.ctaCard p {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.ctaButtons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 968px) {
+    .aboutGrid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-xl);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 80vh;
+    }
+
+    .heroTitle {
+        font-size: 2.5rem;
+    }
+
+    .heroSubtitle {
+        font-size: 1.125rem;
+    }
+
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .servicesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .sectionHeader {
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        text-align: center;
+    }
+
+    .ctaCard {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+}

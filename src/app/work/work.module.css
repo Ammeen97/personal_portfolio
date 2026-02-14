@@ -1,0 +1,78 @@
+.hero {
+    padding: calc(var(--spacing-3xl) + 80px) 0 var(--spacing-2xl);
+    text-align: center;
+}
+
+.intro {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin: var(--spacing-lg) auto 0;
+}
+
+.projectsSection {
+    padding-top: 0;
+}
+
+.projectCount {
+    margin-bottom: var(--spacing-lg);
+}
+
+.projectCount p {
+    color: var(--color-text-tertiary);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+.projectGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.emptyState {
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+}
+
+.emptyState h3 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-secondary);
+}
+
+.emptyState p {
+    margin-bottom: var(--spacing-lg);
+}
+
+.ctaCard {
+    background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl) var(--spacing-2xl);
+    text-align: center;
+}
+
+.ctaCard h2,
+.ctaCard p {
+    color: white;
+}
+
+.ctaCard h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.ctaCard p {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaCard {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+}

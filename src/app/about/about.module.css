@@ -1,0 +1,187 @@
+.hero {
+    padding: calc(var(--spacing-3xl) + 80px) 0 var(--spacing-2xl);
+    text-align: center;
+}
+
+.intro {
+    font-size: 1.25rem;
+    max-width: 800px;
+    margin: var(--spacing-lg) auto 0;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.approachSection {
+    background: var(--color-bg-secondary);
+}
+
+.approachGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.approachCard {
+    text-align: center;
+}
+
+.approachIcon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.approachCard h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.approachCard p {
+    margin: 0;
+}
+
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-2xl);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skillTitle {
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-accent-primary);
+}
+
+.skillList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.skillList li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--color-text-secondary);
+}
+
+.skillList li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent-primary);
+}
+
+.experienceSection {
+    background: var(--color-bg-secondary);
+}
+
+.experienceList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.experienceList li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--color-text-secondary);
+    font-size: 1.125rem;
+    line-height: 1.7;
+}
+
+.experienceList li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent-primary);
+    font-weight: bold;
+}
+
+.experienceList strong {
+    color: var(--color-text-primary);
+}
+
+.clientsSection {
+    margin-top: var(--spacing-2xl);
+    padding-top: var(--spacing-2xl);
+    border-top: 1px solid var(--color-border);
+}
+
+.clientsTitle {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.clientsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.client {
+    padding: 0.625rem 1.25rem;
+    background: var(--color-bg-tertiary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-full);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    transition: all var(--transition-base);
+}
+
+.client:hover {
+    background: var(--color-bg-elevated);
+    border-color: var(--color-accent-primary);
+    transform: translateY(-2px);
+}
+
+.ctaCard {
+    background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+    border-radius: var(--radius-xl);
+    padding: var(--spacing-3xl) var(--spacing-2xl);
+    text-align: center;
+}
+
+.ctaCard h2,
+.ctaCard p {
+    color: white;
+}
+
+.ctaCard h2 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.ctaCard p {
+    max-width: 600px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.ctaButtons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+    .skillsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .approachGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ctaCard {
+        padding: var(--spacing-2xl) var(--spacing-md);
+    }
+}
