@@ -22,6 +22,7 @@
     transform: translateY(-50%); /* Centers it vertically behind the text */
     z-index: 1; /* Sits behind heroContent (which is z-index 10) */
     pointer-events: none;
+    color: rgba(255, 255, 255, 0.1);
 }
 
 .marqueeWrapperBottom {
@@ -32,6 +33,7 @@
     transform: translateY(50%); /* Centers it vertically behind the text */
     z-index: 1; /* Sits behind heroContent (which is z-index 10) */
     pointer-events: none;
+    color: rgba(255, 255, 255, 0.1);
 }
 
 .heroContent {
@@ -40,6 +42,7 @@
     text-align: center;
     max-width: 900px;
     margin: 0 auto;
+    margin-top: -6vh; /* Pull it up a bit to overlap with the top marquee */
 }
 
 .heroTitle {

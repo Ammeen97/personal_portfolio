@@ -19,7 +19,6 @@
     text-transform: uppercase;
     white-space: nowrap;
     padding-right: 4rem; /* Spacing between the repetitions */
-    color: var(--color-accent-secondary);
     letter-spacing: -0.04em;
 }
 

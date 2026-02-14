@@ -21,7 +21,7 @@ export default async function Home() {
                     <div className={styles.marqueeWrapperTop}>
                         <Marquee
                             text="AMINE BEN FAIZA "
-                            speed="30s"
+                            speed="20s"
                             direction="left-to-right"
                         />
                     </div>
@@ -53,8 +53,8 @@ export default async function Home() {
                     </div>
                     <div className={styles.marqueeWrapperBottom}>
                         <Marquee 
-                            text="VISUAL IDENTITY DESIGNER " 
-                            speed="40s" 
+                            text="VISUAL IDENTITY DESIGN • BRAND DESIGN • SOCIAL MEDIA DESIGN • " 
+                            speed="80s" 
                             direction="right-to-left"
                         />
                     </div>
