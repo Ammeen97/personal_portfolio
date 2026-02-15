@@ -48,7 +48,9 @@ export default function AboutPage() {
                     <h2 className={styles.sectionTitle}>How I Work</h2>
                     <div className={styles.approachGrid}>
                         <div className={`${styles.approachCard} card`}>
-                            <div className={styles.approachIcon}>🎯</div>
+                            <div className={styles.approachIcon}>
+                                <img src="/icons/clarity.png" alt="Clarity Icon" />
+                            </div>
                             <h3>Clarity</h3>
                             <p>
                                 Every design decision should reduce complexity, not add to it. I focus on creating
@@ -58,7 +60,9 @@ export default function AboutPage() {
                         </div>
 
                         <div className={`${styles.approachCard} card`}>
-                            <div className={styles.approachIcon}>🔄</div>
+                            <div className={styles.approachIcon}>
+                                <img src="/icons/consistency.png" alt="Consistency Icon" />
+                            </div>
                             <h3>Consistency</h3>
                             <p>
                                 A brand isn't just a logo—it's how you show up across every touchpoint. I develop
@@ -68,7 +72,9 @@ export default function AboutPage() {
                         </div>
 
                         <div className={`${styles.approachCard} card`}>
-                            <div className={styles.approachIcon}>⚡</div>
+                            <div className={styles.approachIcon}>
+                                <img src="/icons/usability.png" alt="Usability Icon" />
+                            </div>
                             <h3>Real-World Usability</h3>
                             <p>
                                 Beautiful concepts don't matter if they don't translate to real applications. I

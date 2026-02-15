@@ -28,9 +28,11 @@
     text-align: center;
 }
 
-.approachIcon {
-    font-size: 3rem;
+.approachIcon img{
+    /* font-size: 3rem; */
     margin-bottom: var(--spacing-md);
+    width: 60px;
+    height: 60px;
 }
 
 .approachCard h3 {

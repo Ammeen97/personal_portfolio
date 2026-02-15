@@ -126,7 +126,9 @@ export default async function Home() {
                     <h2 className={styles.sectionTitle}>What I Do</h2>
                     <div className={styles.servicesGrid}>
                         <div className={`${styles.serviceCard} card`}>
-                            <div className={styles.serviceIcon}>🎨</div>
+                            <div className={styles.serviceIcon}>
+                                <img src="/icons/brandidentity.png" alt="Brand Identity Icon" />
+                            </div>
                             <h3>Brand Identity Design</h3>
                             <p>
                                 Creating complete visual systems—logos, color palettes, typography, and
@@ -135,7 +137,9 @@ export default async function Home() {
                         </div>
 
                         <div className={`${styles.serviceCard} card`}>
-                            <div className={styles.serviceIcon}>✨</div>
+                            <div className={styles.serviceIcon}>
+                                <img src="/icons/visualidentity.png" alt="Visual Identity Icon" />
+                            </div>
                             <h3>Visual Identity Systems</h3>
                             <p>
                                 Developing cohesive design languages that work seamlessly across digital,
@@ -144,7 +148,9 @@ export default async function Home() {
                         </div>
 
                         <div className={`${styles.serviceCard} card`}>
-                            <div className={styles.serviceIcon}>📱</div>
+                            <div className={styles.serviceIcon}>
+                                <img src="/icons/socialmedia.png" alt="Social Media Design Icon" />
+                            </div>
                             <h3>Social Media Design</h3>
                             <p>
                                 Crafting on-brand visual content that tells your story and engages your
