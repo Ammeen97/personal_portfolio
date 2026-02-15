@@ -1,0 +1,22 @@
+.logoWrapper {
+    position: absolute;
+    top: 20%; /* Moved up slightly to account for hero alignment */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85vw; /* Increased width for better visibility */
+    max-width: 1100px;
+    height: auto;
+    z-index: 0; /* Make sure this is above the blobs (z-index: 1) or equal */
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.svg {
+    width: 90%;
+    height: 90%;
+    color: rgb(82, 82, 82);
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.05)); /* Optional glow */
+}

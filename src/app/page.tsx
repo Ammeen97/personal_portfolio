@@ -3,6 +3,7 @@ import { getBehanceProjects } from '@/lib/behance';
 import ProjectCard from '@/components/ProjectCard';
 import styles from './page.module.css';
 import Marquee from '@/components/Marquee/Marquee';
+import BackgroundLogo from '@/components/BackgroundLogo/BackgroundLogo';
 
 export default async function Home() {
     const featuredProjects = await getBehanceProjects(process.env.BEHANCE_USERNAME || 'aminebenfa');
@@ -10,11 +11,13 @@ export default async function Home() {
     return (
         <>
             <div className={styles.topPageWrapper}>
-                {/* Background blobs */}
+                {/* Background blobs (Layer -1) */}
                 <div className={styles.heroBackground}>
                     <div className={styles.gradientBlob1}></div>
                     <div className={styles.gradientBlob2}></div>
                 </div>
+                {/* SVG Background Layer (Layer 0) */}
+                <BackgroundLogo />
                 {/* Hero Section */}
                 <section className={styles.hero}>
                     <div className={styles.marqueeWrapperTop}>

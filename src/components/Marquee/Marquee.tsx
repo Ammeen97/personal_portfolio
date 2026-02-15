@@ -1,4 +1,3 @@
-import css from 'styled-jsx/css';
 import styles from './Marquee.module.css';
 
 interface MarqueeProps {

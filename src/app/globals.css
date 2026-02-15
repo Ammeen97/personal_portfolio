@@ -139,7 +139,7 @@ a:hover {
 
 /* Utility Classes */
 .gradient-text {
-  background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-hover));
+  background: linear-gradient(90deg, var(--color-accent-secondary), var(--color-accent-hover));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

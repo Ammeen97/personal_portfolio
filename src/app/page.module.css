@@ -22,7 +22,6 @@
     transform: translateY(-50%); /* Centers it vertically behind the text */
     z-index: 1; /* Sits behind heroContent (which is z-index 10) */
     pointer-events: none;
-    color: rgba(255, 255, 255, 0.1);
 }
 
 .marqueeWrapperBottom {
@@ -33,7 +32,6 @@
     transform: translateY(50%); /* Centers it vertically behind the text */
     z-index: 1; /* Sits behind heroContent (which is z-index 10) */
     pointer-events: none;
-    color: rgba(255, 255, 255, 0.1);
 }
 
 .heroContent {
@@ -127,7 +125,7 @@
 }
 
 .viewAll {
-    color: var(--color-accent-primary);
+    color: white;
     font-weight: 600;
     transition: transform var(--transition-base);
 }

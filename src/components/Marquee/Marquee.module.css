@@ -20,6 +20,7 @@
     white-space: nowrap;
     padding-right: 4rem; /* Spacing between the repetitions */
     letter-spacing: -0.04em;
+    color: rgb(71, 70, 70);
 }
 
 @keyframes scroll {
