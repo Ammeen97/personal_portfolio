@@ -49,8 +49,8 @@ function getFallbackProjects(): IBehanceProject[] {
             modified_on: Date.now() / 1000,
             url: 'https://www.behance.net/gallery/211138111/lincco-visual-identity',
             covers: {
-                '404': 'images/projects/lincco-thumb.png',
-                original: '/images/projects/lincco-thumb.png',
+                '404': 'images/projects/lincco-thumb.jpeg',
+                original: '/images/projects/lincco-thumb.jpeg',
             },
             fields: ['Branding', 'Graphic Design'],
             stats: { views: 0, appreciations: 0, comments: 0 },
@@ -65,8 +65,8 @@ function getFallbackProjects(): IBehanceProject[] {
             modified_on: Date.now() / 1000,
             url: 'https://www.behance.net/gallery/242914705/biodex-brand-refresh-visual-identity-system',
             covers: {
-                '404': '/images/projects/biodex-thumb-2.png',
-                original: '/images/projects/biodex-thumb-2.png',
+                '404': '/images/projects/biodex-thumb.jpeg',
+                original: '/images/projects/biodex-thumb.jpeg',
             },
             fields: ['Branding', 'Graphic Design'],
             stats: { views: 0, appreciations: 0, comments: 0 },

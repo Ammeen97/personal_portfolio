@@ -35,7 +35,7 @@ export default async function Home() {
                                 look ready to <span className="gradient-text">grow</span>
                             </h1>
                             <p className={`${styles.heroSubtitle} fade-in`}>
-                                I'm Amine Ben Faiza, a Visual identity and social media designer. I help you build a clear,
+                                I'm Amine Ben Faiza, a Visual Identity and Social Media Designer. <br />I help you build a clear,
                                 professional visual identity—from logo and brand assets to social media and everyday business materials.
                             </p>
                             <div className={`${styles.heroButtons} fade-in`}>
