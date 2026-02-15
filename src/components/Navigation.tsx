@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import styles from './Navigation.module.css';
+import Image from 'next/image';
 
 export default function Navigation() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -21,7 +22,15 @@ export default function Navigation() {
         <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
             <div className={`container ${styles.navContainer}`}>
                 <Link href="/" className={styles.logo}>
-                    <span className="gradient-text">AB</span>
+                    <div className={styles.logoWrapper}>
+                        <Image
+                            src="/images/logo.png"
+                            alt="Amine Ben Faiza Logo"
+                            fill
+                            priority
+                            className={styles.logoImage}
+                        />
+                    </div>
                 </Link>
 
                 <div className={`${styles.navLinks} ${isMobileMenuOpen ? styles.mobileOpen : ''}`}>

@@ -5,8 +5,7 @@ import styles from './page.module.css';
 import Marquee from '@/components/Marquee/Marquee';
 
 export default async function Home() {
-    const projects = await getBehanceProjects(process.env.BEHANCE_USERNAME || 'aminebenfa');
-    const featuredProjects = projects.slice(0, 4); // Show first 4 projects
+    const featuredProjects = await getBehanceProjects(process.env.BEHANCE_USERNAME || 'aminebenfa');
 
     return (
         <>
@@ -20,16 +19,16 @@ export default async function Home() {
                 <section className={styles.hero}>
                     <div className={styles.marqueeWrapperTop}>
                         <Marquee
-                            text="AMINE BEN FAIZA "
-                            speed="20s"
+                            text="AMINE BEN FAIZA AMINE BEN FAIZA AMINE BEN FAIZA "
+                            speed="80s"
                             direction="left-to-right"
                         />
                     </div>
                     <div className="container">
                         <div className={styles.heroContent}>
                             <h1 className={`${styles.heroTitle} fade-in`}>
-                                Helping startups & small businesses <br />
-                                <span className="gradient-text">look ready to grow</span>
+                                Helping startups <br />& small businesses<br />
+                                look ready to <span className="gradient-text">grow</span>
                             </h1>
                             <p className={`${styles.heroSubtitle} fade-in`}>
                                 I'm Amine Ben Faiza, a Visual identity and social media designer. I help you build a clear,

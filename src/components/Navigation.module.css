@@ -25,14 +25,25 @@
 }
 
 .logo {
-    font-size: 1.75rem;
-    font-weight: 800;
-    font-family: var(--font-display);
-    transition: transform var(--transition-base);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s ease;
+}
+
+/* Create a container to control the physical size on the nav bar */
+.logoWrapper {
+    position: relative;
+    width: 50px;
+    height: 50px; 
+}
+
+.logoImage {
+    object-fit: contain; 
+    transform: scale(1.2); /* Subtle boost to counteract the file's padding */
 }
 
 .logo:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .navLinks {
