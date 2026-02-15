@@ -71,7 +71,7 @@ function getFallbackProjects(): IBehanceProject[] {
             fields: ['Branding', 'Graphic Design'],
             stats: { views: 0, appreciations: 0, comments: 0 },
             description: 'A contemporary brand refresh for a biotech company, balancing modernity with scientific credibility.',
-            tags: ['brand refresh', 'biotech', 'sustainability', 'eco-friendly'],
+            tags: ['brand refresh', 'bio', 'sustainability', 'eco-friendly'],
         },
         {
             id: 3,

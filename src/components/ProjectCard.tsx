@@ -34,7 +34,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 {project.description && (
                     <p className={styles.description}>{project.description}</p>
                 )}
-                {project.stats && (
+                {/* {project.stats && (
                     <div className={styles.stats}>
                         <div className={styles.stat}>
                             <span className={styles.statIcon}>👁</span>
@@ -45,7 +45,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                             <span>{project.stats.appreciations.toLocaleString()}</span>
                         </div>
                     </div>
-                )}
+                )} */}
             </div>
         </Link>
     );
