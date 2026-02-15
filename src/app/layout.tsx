@@ -3,8 +3,32 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navigation from '@/components/Navigation'
 import Footer from '@/components/Footer'
+import localFont from 'next/font/local'
 
 const inter = Inter({ subsets: ['latin'] })
+
+const neueMachina = localFont({
+    src: [
+        {
+            path: '../assets/fonts/Neue-Machina/PPNeueMachina-PlainRegular.otf',
+            weight: '400',
+            style: 'normal',
+        },
+        {
+            path: '../assets/fonts/Neue-Machina/PPNeueMachina-PlainUltrabold.otf',
+            weight: '500',
+            style: 'normal',
+        }
+    ],
+    variable: '--font-neue-machina'
+})
+
+const gallery = localFont({
+    src: [
+        { path: '../assets/fonts/Gallery/gallery-regular.otf', weight: '400', style: 'normal' },
+    ],
+    variable: '--font-gallery'
+})
 
 export const metadata: Metadata = {
     title: 'Amine Ben Faiza — Brand & Social Media Designer',
@@ -35,7 +59,7 @@ export default function RootLayout({
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
             </head>
-            <body className={inter.className}>
+            <body className={`${inter.className} ${neueMachina.variable} ${gallery.variable}`}>
                 <Navigation />
                 <main>{children}</main>
                 <Footer />

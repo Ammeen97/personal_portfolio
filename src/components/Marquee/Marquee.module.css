@@ -1,0 +1,29 @@
+.marqueeContainer {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    background: transparent;
+}
+
+.marqueeTrack {
+    display: flex;
+    width: max-content;
+    animation: scroll linear infinite;
+    will-change: transform; /* Optimization for smoother movement */
+}
+
+.marqueeTrack span {
+    font-family: var(--font-neue-machina);
+    font-weight: 400;
+    font-size: clamp(8rem, 20vw, 15rem); /*Made it much larger for that bold look */
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding-right: 4rem; /* Spacing between the repetitions */
+    letter-spacing: -0.04em;
+    color: rgb(71, 70, 70);
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* Use -50% if you have 2-4 spans for a seamless loop */
+}

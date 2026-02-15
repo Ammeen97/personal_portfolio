@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import { BehanceProject, getCategoryFromProject, getIndustryFromProject } from '@/lib/behance';
+import { getCategoryFromProject, getIndustryFromProject } from '@/lib/behance';
+import {IBehanceProject} from '../../models/IBehanceProject';
 import styles from './ProjectCard.module.css';
 
 interface ProjectCardProps {
-    project: BehanceProject;
+    project: IBehanceProject;
 }
 
 export default function ProjectCard({ project }: ProjectCardProps) {

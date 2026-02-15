@@ -13,7 +13,7 @@ export default function AboutPage() {
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className="container">
-                    <h1 className="fade-in">Building brands that feel ready to grow</h1>
+                    <h1 className="fade-in">Building brands that feel <br />ready to <span className='gradient-text'>grow</span></h1>
                     <p className={`${styles.intro} fade-in`}>
                         I'm Amine Ben Faiza, a Visual identity and social media designer. I help startups and small businesses
                         build a clear, professional visual identity—from logo and brand assets to social media and everyday business materials.
