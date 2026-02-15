@@ -20,6 +20,7 @@ export default async function Home() {
                 <BackgroundLogo />
                 {/* Hero Section */}
                 <section className={styles.hero}>
+                    {/* Marquee at the top of the hero section */}
                     <div className={styles.marqueeWrapperTop}>
                         <Marquee
                             text="AMINE BEN FAIZA AMINE BEN FAIZA AMINE BEN FAIZA "
@@ -53,6 +54,7 @@ export default async function Home() {
                             <div className={styles.gradientBlob2}></div>
                         </div>
                     </div>
+                    {/* Marquee at the bottom of the hero section */}
                     <div className={styles.marqueeWrapperBottom}>
                         <Marquee 
                             text="VISUAL IDENTITY DESIGN • BRAND DESIGN • SOCIAL MEDIA DESIGN • " 

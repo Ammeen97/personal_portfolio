@@ -9,14 +9,14 @@ export const metadata: Metadata = {
 };
 
 export default async function WorkPage() {
-    const projects = await getBehanceProjects(process.env.NEXT_PUBLIC_BEHANCE_USERNAME || 'aminebenfa');
+    const projects = await getBehanceProjects(process.env.BEHANCE_USERNAME || 'aminebenfa');
 
     return (
         <>
             {/* Hero Section */}
             <section className={styles.hero}>
                 <div className="container">
-                    <h1 className="fade-in">Selected Work</h1>
+                    <h1 className="fade-in">Showcasing My Work</h1>
                     <p className={`${styles.intro} fade-in`}>
                         A collection of brand identity, visual system, and social media design projects for
                         startups, tech platforms, and eco-conscious businesses. Each project is built on

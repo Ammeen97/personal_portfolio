@@ -225,7 +225,7 @@
 }
 
 .ctaCard {
-    background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
+    background: linear-gradient(120deg, var(--color-accent-primary), var(--color-accent-secondary));
     border-radius: var(--radius-xl);
     padding: var(--spacing-3xl) var(--spacing-2xl);
     text-align: center;
